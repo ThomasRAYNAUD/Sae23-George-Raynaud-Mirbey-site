@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  background-color: #FFBB33;
+}
+
+.container {
+  position: relative;
+  width: 420px;
+  min-height: 470px;
+  height: auto;
+  max-height: 520px;
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 30px; /*mieux 10px ???*/
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.logo {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 85px;
+  height: 85px;
+/*  box-shadow: 0 5px 5px #ccc;*/
+/*  font-size: 1.8em;*/
+  justify-content: center; /*centre axe x*/
+  align-items: center; /*centre axe y*/
+
+}
+
+.img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.carre {
+  position: relative;
+  top:30px;
+  height: auto;
+  max-height: 320px;
+  padding: 15% 5%;
+  margin-top: 20%;
+  background-color: #fff;
+  color: #82ade6de;
+  box-shadow: 0px 5px 10px #7c8395;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+.tab-body.active {
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #FFBB33;
+  padding: 1.8% 0;
+  margin: 20px 0;
+}
+
+.row .input {
+  width: 90%;
+  border: none;
+  outline: none;
+  color: #FFBB33;
+  font-weight: 550;
+}
+.input::placeholder {
+  color: lightgrey;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  width: 120px;
+  height: 45px;
+  border-radius: 50px;
+  background-color: #FFBB33;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+}
+
+.tab-link {
+  text-decoration: none;
+  color: #FFBB33;
+  margin: 0 3%;
+}
+
+.tab-link.active {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    width: 80%;
+    min-width: 380px;
+    min-height: 490px;
+  }
+  .tab-body {
+    width: 100%;
+    padding: 15% 5%;
+    margin-top: 25%;
+    max-height: 420px;
+  }
+}
+.test {
+  color: black;
+}
+
+.label {
+  font-size: 10px;
+}
+
+.input {
+  color: #FFBB33;
+}
+
+

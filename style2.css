@@ -1,0 +1,97 @@
+body {
+    margin: 0px; /*initialise la page sans marge*/
+    width: 100%; /*on utilise toute la largeur de la page*/
+  display: flex;
+  flex-direction: column;/*place les éléments de la page dans le plan verticale*/
+  align-items: center; /*place tous les éléments des pages au centre*/
+  font-family: Trebuchet MS, sans-serif;/*choix de police*/
+}
+
+.title {
+    color: #FFBB33;/*titre dans le menu de la bonne couleur avec 30px de taille de police*/
+    font-size: 30px;
+}
+
+.tableau {
+    width: 100%;/*le tableau prend tout la largeur de la page dans l'index.php*/
+    border-collapse: collapse;/*permet de pas avoir de double bordure dans le tableau*/
+}
+
+.case, .ligneT {
+  border: 1px solid #ddd;/*largeur bordure de couleur blanche*/
+  padding: 8px; /*écartement du tableau par rapport au texte, permet que le tableau soit moins chargé et plus lisible*/
+}
+
+.ligneT {
+  padding-top: 12px;/*écartement du texte par rapport au tableau vers le haut*/
+  padding-bottom: 12px;/*pareil mais vers le bas*/
+  text-align: left;/*écriture du texte le plus à gauche, vers la marge*/
+  background-color: #FFBB33; /*le background des case dans le code couleur souhaité*/
+  color: white; /*couleur du texte dans les cases*/
+}
+
+.ligne:hover {
+  background-color: #ddd; /*quanc on passe la souris sur une ligne tr, elle devient grise dans le fond*/
+}
+
+ul {
+    list-style-type: none;/*enlève points devant les éléments de la liste, si on met pas on voit pas la différence
+    car padding à 0 (liste dans la bordure gauche de la page)*/
+    padding: 0; /*mise à niveau par rapport à la bordure gauche, */
+    background-color: #f1f1f1;/*fond gris dans les cases du tableau*/
+}
+
+.test{
+    text-align: center;
+    /*éléments de la liste au centre de la page*/
+}
+
+li a {/*selection des liens dans une liste*/
+    display: block;/*les uns en dessous des autres*/
+    color: #000;/*couleur texte*/
+    padding: 8px 0 8px 0; /*espacement autour du texte, plus grandes cases
+    8px=au dessus et dessous*/
+    text-decoration: none;/*on voit pas que c'est un lien*/
+}
+
+.active {
+    background-color: #FFBB33;
+    color: white;
+}
+
+li a:hover:not(.active) {/*lien dans une liste et on passe la souris dessus sauf celui où sa classe c'est "active"*/
+    background-color: rgb(228, 225, 225);/*quand on passe la souris, ligne grise*/
+    color: white;/*quand on passe la souris le texte devient blanc*/
+}
+
+.texte{
+    background-color: rgba(229, 225, 225, 0.425);/*zone de texte avec fond gris*/
+    width: 70%; /*prend une petite partie de la page*/
+    margin: 0 auto;/*zone de div au centre de la page*/
+}
+
+.IUT {/*gestion taille et placement de l'image bien au centre*/
+    max-width: 70%;
+    max-height: 70%;
+    margin: 0 auto;
+    margin-left: 15%;
+    min-height: 30%;
+    min-width: 30%;
+}
+
+  .row .input {
+    width: 100%;/*zone de texte avec bon espace*/
+    border: none;/*pas de bordure zone de texte*/
+    outline: none;/*pas de ligne extérieur non plus*/
+    color: #FFBB33;/*le texet dans le input en orange*/
+    font-weight: 550;/*taille de police dedans*/
+  }
+
+  .box2 { /*emplacement de la boite qui contient les zone de texte et inputs*/
+    width: 30%;/*largeur de la zone*/
+    padding: 2% 6%;/*espace autour de ce que y'a à l'intérieur*/
+    background-image: linear-gradient(135deg, #FFBB33, #c3c65a);/*le fond est un dégradé de 2 couleurs*/
+    box-shadow: 0px 5px 10px #7c8395;/*ombres autour*/
+    border-radius: 50px;/*coins arrondis*/
+    font-size: 15px; /*taille de police*/
+  }
